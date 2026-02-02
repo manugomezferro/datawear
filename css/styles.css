@@ -363,4 +363,17 @@ section {
     .shop-grid {
         grid-template-columns: 1fr;
     }
+.hero-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Esto hace que el video llene el espacio sin deformarse */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Para que el texto quede por encima del video */
 }
